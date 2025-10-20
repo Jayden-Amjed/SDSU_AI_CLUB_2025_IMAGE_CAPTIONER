@@ -1,0 +1,25 @@
+# Ignore virtual environment
+.venv/
+
+# Ignore dataset files
+flicker8k/
+flickr8k/
+Flickr8k_Dataset/
+Flickr8k_text/
+
+# Python cache / build files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info
+build/
+dist/
+
+# VSCode / IDE configs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store

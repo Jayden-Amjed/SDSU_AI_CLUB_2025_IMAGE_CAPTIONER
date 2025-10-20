@@ -18,16 +18,41 @@ Group repository for the Project we're making in the SDSU AI Club. An Image capt
 ------
 ## Usage:
 
-To use this application, necessary dependencies will need to be installed. Run the following commands:
+To use this application, necessary dependencies will need to be installed. Follow These Steps:
+
+First clone repo 
 
 ```aiignore
-?
+git clone https://github.com/<your-username>/SDSU_AI_CLUB_2025_IMAGE_CAPTIONER.git
+cd SDSU_AI_CLUB_2025_IMAGE_CAPTIONER
+```
+Then inside VSCODE with the project open:
+
+For Windows
+
+```aiignore
+python -m venv .venv
+.venv\Scripts\activate
 ```
 
-To run development, use:
+For Mac
 ```aiignore
-?
+python3 -m venv .venv
+source .venv/bin/activate
 ```
+
+Then install all project depedencies:
+```aiignore
+pip install -r requirements.txt
+```
+------
+##Data Set Installation:
+Now we need to download the dataset and put in our files:
+
+Download flickr8k Dataset here: https://www.kaggle.com/datasets/adityajn105/flickr8k?resource=download
+
+Then extract all files into a new file, same location as data_loader.py
+Make sure the flickr8k dataset's hiechary name is Flicker8k/Images and Flicker8k/captions.txt
 
 ------
 ## Demo and Links:
