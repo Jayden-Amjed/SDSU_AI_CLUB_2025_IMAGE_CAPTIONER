@@ -9,6 +9,11 @@
 - [Deployed Link](#Deployed-Links)
 - [Author/GitHub Repository](#AuthorCollaborators-GitHub-Repository)
 - [License](#license)
+------
+## Set Up:
+Install PyTorch via pip:
+ pip3 install torch torchvision
+
 
 ------
 ## Description:
