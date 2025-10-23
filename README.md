@@ -11,8 +11,21 @@
 - [License](#license)
 ------
 ## Set Up:
-Install PyTorch via pip:
- pip3 install torch torchvision
+
+# 1) Install a supported Python alongside 3.14
+brew install python@3.12
+
+# 2) Make and activate a fresh virtual env with 3.12
+/opt/homebrew/bin/python3.12 -m venv .venv
+source .venv/bin/activate
+
+# 3) Install PyTorch into THIS env
+python -m pip install --upgrade pip
+pip install torch torchvision torchaudio  \
+    --extra-index-url https://download.pytorch.org/whl/cpu
+
+# 4) Verify
+python -c "import torch,sys; print('torch', torch.__version__); print('python', sys.version)"
 
 
 ------
